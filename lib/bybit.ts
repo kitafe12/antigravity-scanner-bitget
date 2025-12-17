@@ -53,7 +53,7 @@ export async function fetchTopTraders(): Promise<TraderInsert[]> {
     // No API calls to Bybit to avoid 404/Fallback to wrong data.
 
     return VERIFIED_BOTS.map(bot => ({
-        exchange_name: 'BYBIT',
+        exchange_name: 'BITGET',
         exchange_uid: bot.exchange_uid,
         nickname: bot.nickname,
         avatar_url: bot.avatar,
@@ -62,7 +62,7 @@ export async function fetchTopTraders(): Promise<TraderInsert[]> {
         win_rate: bot.win_rate,
         aum: bot.aum,
         trading_type: 'SPOT',
-        profile_url: `https://www.bybit.com/`,
+        profile_url: `https://www.bitget.com/`,
         last_updated: new Date().toISOString(),
     }))
 }

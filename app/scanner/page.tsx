@@ -51,7 +51,7 @@ export default async function ScannerPage() {
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                         </span>
-                        Live Bybit Market Scanner
+                        Live Bitget Market Scanner
                     </div>
 
                     <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tighter mb-6">
@@ -61,7 +61,7 @@ export default async function ScannerPage() {
                     </h1>
 
                     <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
-                        We track and analyze thousands of Bybit accounts in real-time, filtering for <span className="text-slate-200 font-medium">consistent profitability</span> and <span className="text-slate-200 font-medium">low risk</span> so you don't have to.
+                        We track and analyze thousands of Bitget accounts in real-time, filtering for <span className="text-slate-200 font-medium">consistent profitability</span> and <span className="text-slate-200 font-medium">low risk</span> so you don't have to.
                     </p>
 
                     <div className="flex justify-center gap-4 mb-16">

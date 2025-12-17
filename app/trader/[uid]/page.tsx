@@ -81,7 +81,7 @@ export default async function TraderPage({ params }: Props) {
     const winRate = (trader.win_rate || 0) * 100
 
     const affiliateId = 'YOUR_ID_HERE'
-    const copyLink = `https://www.bybit.com/`
+    const copyLink = `https://www.bitget.com/`
 
     return (
         <main className="min-h-screen bg-slate-950 text-slate-50 relative pb-32">
@@ -107,7 +107,7 @@ export default async function TraderPage({ params }: Props) {
                         </div>
                         <h1 className="text-4xl font-bold text-white mb-2">{trader.nickname}</h1>
                         <p className="text-slate-400 text-sm max-w-lg mx-auto md:mx-0">
-                            Professional Bybit trader tracked by Antigravity. Consistent performance with a focus on risk management.
+                            Professional Bitget trader tracked by Antigravity. Consistent performance with a focus on risk management.
                         </p>
                     </div>
                 </div>
@@ -189,7 +189,7 @@ export default async function TraderPage({ params }: Props) {
                 <div className="max-w-4xl mx-auto flex items-center justify-between gap-4">
                     <div className="hidden md:block">
                         <p className="text-sm font-medium text-white">Ready to copy?</p>
-                        <p className="text-xs text-slate-500">Sync with this trader on Bybit instantly.</p>
+                        <p className="text-xs text-slate-500">Sync with this trader on Bitget instantly.</p>
                     </div>
                     <div className="flex flex-col items-end gap-1 w-full md:w-auto">
                         <div className="flex items-center gap-3 w-full md:w-auto">
@@ -206,7 +206,7 @@ export default async function TraderPage({ params }: Props) {
                             </a>
                         </div>
                         <p className="text-[10px] text-emerald-500/80 font-medium hidden md:block">
-                            Official Bybit Partner Link
+                            Official Bitget Partner Link
                         </p>
                     </div>
                 </div>
