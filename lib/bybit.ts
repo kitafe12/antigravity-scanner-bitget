@@ -4,11 +4,11 @@ import { RestClientV5 } from 'bybit-api'
 
 export type TraderInsert = Database['public']['Tables']['master_traders']['Insert']
 
-const client = new RestClientV5({
-    key: process.env.BYBIT_API_KEY,
-    secret: process.env.BYBIT_API_SECRET,
-    testnet: false,
-})
+// const client = new RestClientV5({
+//     key: process.env.BITGET_API_KEY,
+//     secret: process.env.BITGET_API_SECRET,
+//     testnet: false,
+// })
 
 // 3 SPECIFIC VERIFIED BOTS (User Provided)
 const VERIFIED_BOTS = [
