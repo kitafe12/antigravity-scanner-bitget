@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { fetchTopTraders } from '@/lib/bybit'
+import { fetchTopTraders } from '@/lib/bitget'
 import { supabaseAdmin } from '@/lib/supabaseAdmin'
 
 // Prevent caching for Cron jobs

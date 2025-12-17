@@ -4,10 +4,10 @@ import dotenv from 'dotenv'
 import fs from 'fs'
 import path from 'path'
 
-// Mock Data from lib/bybit.ts
+// Mock Data from lib/bitget.ts
 const MOCK_TRADERS = [
     {
-        exchange_name: 'BYBIT',
+        exchange_name: 'BITGET',
         exchange_uid: 'USER_101',
         nickname: 'AlphaSeeker',
         roi_90d: 0.85,

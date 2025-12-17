@@ -1,14 +1,8 @@
 
 import { Database } from '@/types/database.types'
-import { RestClientV5 } from 'bybit-api'
 
 export type TraderInsert = Database['public']['Tables']['master_traders']['Insert']
 
-// const client = new RestClientV5({
-//     key: process.env.BITGET_API_KEY,
-//     secret: process.env.BITGET_API_SECRET,
-//     testnet: false,
-// })
 
 // 3 SPECIFIC VERIFIED BOTS (User Provided)
 const VERIFIED_BOTS = [
@@ -50,7 +44,7 @@ export async function fetchTopTraders(): Promise<TraderInsert[]> {
     console.log('--- Fetching Verified Spot Grid Bots (Force Feed) ---')
 
     // We strictly return the verified hardcoded list.
-    // No API calls to Bybit to avoid 404/Fallback to wrong data.
+    // No API calls to external exchange to avoid 404/Fallback to wrong data.
 
     return VERIFIED_BOTS.map(bot => ({
         exchange_name: 'BITGET',

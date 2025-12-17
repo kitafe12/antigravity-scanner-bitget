@@ -1,7 +1,7 @@
 -- Create table for master traders
 create table if not exists public.master_traders (
   id uuid default gen_random_uuid() primary key,
-  exchange_name text not null default 'BYBIT',
+  exchange_name text not null default 'BITGET',
   exchange_uid text not null,
   nickname text,
   avatar_url text,

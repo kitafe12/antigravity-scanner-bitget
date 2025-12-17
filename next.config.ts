@@ -7,14 +7,8 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'api.dicebear.com',
       },
-      {
-        protocol: 'https',
-        hostname: 's1.bycsi.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'public.bybit.com',
-      },
+
+
       {
         protocol: 'https',
         hostname: 'lh3.googleusercontent.com',

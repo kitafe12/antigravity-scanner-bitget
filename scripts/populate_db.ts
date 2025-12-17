@@ -2,7 +2,7 @@
 import { createClient } from '@supabase/supabase-js'
 import dotenv from 'dotenv'
 import { resolve } from 'path'
-import { fetchTopTraders } from '../lib/bybit'
+import { fetchTopTraders } from '../lib/bitget'
 
 // Load environment variables manually
 dotenv.config({ path: resolve(__dirname, '../.env.local') })
@@ -20,7 +20,7 @@ const supabase = createClient(
 async function run() {
     console.log('Starting manual update with REAL DATA...')
 
-    // Fetch from Bybit API (via lib/bybit)
+    // Fetch from Bitget (via lib/bitget)
     const tradersToUpsert = await fetchTopTraders()
 
     console.log(`Fetched ${tradersToUpsert.length} market items.`)
